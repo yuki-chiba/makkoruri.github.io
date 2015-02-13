@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Viibar UI Kit - Bootstrap Framework Theme</title>
+	<meta name="description" content="Drunken Parrot UI Kit is a Twitter Bootstrap Framework design and Theme."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<!-- Loading Bootstrap -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Loading Font Awesome Icons -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Loading Drunken Parrot UI -->
+	<!--<link href="css/drunken-parrot.css" rel="stylesheet">-->
+	<link href="css/demo.css" rel="stylesheet">
+	<link href="css/new_viibar.css" rel="stylesheet">
+	<link href="css/prettify.css" rel="stylesheet">
+	<link href="css/production-new.css" rel="stylesheet">
+
+	<!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body onload="prettyPrint()" data-spy="scroll" data-target="#sidenav" data-offset="100">
+
+	<div class="masthead">
+		<div class="container">
+			<div class="masthead-title">Viibar UI Kit
+				<small>Components & Style Guide</small>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+
+				
+				<!-- #### Buttons #### -->
+				<div id="buttons" class="componant-section componant-buttons">
+					<h2 class="demo-section-title">Buttons</h2>
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">Main Action Buttons（通称Main）</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-main guide-btn">確定する</button>
+						</div>
+						<div class="col-md-7">
+							<p>メインアクションに使うボタン。出来る限り1画面に2個以上おかないようにしてください。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-main">確定する&lt;/button>
+</pre>
+
+
+					<br>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">Main Tool Buttons（通称poco）</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-poco guide-btn"><i class="fa fa-download"></i> ダウンロード</button>
+						</div>
+						<div class="col-md-7">
+							<p>メインアクションではありませんが、主要な機能に使うボタンスタイルです。何個でも置いてOKです。アイコンも一緒に使うことが多いです。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-poco">&lt;i class="fa fa-download">&lt;/i> ダウンロード&lt;/button>
+</pre>
+
+
+					<br>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">sub Buttons（通称peta）</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-peta guide-btn">キャンセル</button>
+						</div>
+						<div class="col-md-7">
+							<p>補助的な機能やモーダルの閉じるボタン、キャンセルボタンに使うボタンスタイルです。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-peta">キャンセル&lt;/button>
+</pre>
+
+
+					<br>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">delete Buttons</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-peta guide-btn btn-emergency">削除する</button>
+						</div>
+						<div class="col-md-7">
+							<p>削除するボタンに使うボタンスタイルです。ユーザーに危険を知らせるためなら削除以外でも使ってOKです。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-peta btn-emergency">削除する&lt;/button>
+</pre>
+
+
+					<br>
+
+
+
+
+<!-- ****  Button Size  *****-->
+
+
+					<div class="row" style="margin-top: 200px;">
+						<h2 class="demo-section-title">Button Size</h2>
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">Normal Buttons</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-main guide-btn">Normal</button>
+						</div>
+						<div class="col-md-7">
+							<p>一番使う頻度の高い通常サイズです。デフォルトサイズなのでサイズ指定の記述は特にいりません。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-main">Normal&lt;/button>
+</pre>
+
+
+					<br>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">Mini Buttons</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-main btn-mini guide-btn">Mini</button>
+						</div>
+						<div class="col-md-7">
+							<p>一番小さいサイズのボタンです。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-main btn-mini">Mini&lt;/button>
+</pre>
+					<br>
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">Small Buttons</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-main btn-sm guide-btn">Small</button>
+						</div>
+						<div class="col-md-7">
+							<p>あまり目で立たなくてもいい補助的なボタンのサイズです。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-main btn-sm">Small&lt;/button>
+</pre>
+
+					<br>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">Large Buttons</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-main btn-lg guide-btn">Large</button>
+						</div>
+						<div class="col-md-7">
+							<p>目立たせたい場合に使う大きめサイズのボタンです。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-main btn-lg">Large&lt;/button>
+</pre>
+
+
+					<br>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">King Buttons</h3>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-main btn-king">King</button>
+						</div>
+						<div class="col-md-7">
+							<p style="margin-left: 10px;">見逃してもらっては困る！確実に目ただせたい場合に使うキングサイズのボタンです。</p>
+						</div>
+					</div> <!-- /row -->
+					
+
+					<br>
+
+<pre class="prettyprint linenums">
+&lt;button type="button" class="btn btn-main btn-king">King&lt;/button>
+</pre>
+
+
+					<br>
+
+
+<!-- ****  Button Size End  *****-->
+
+				</div>
+
+				<!-- #### Icon #### -->
+				<div class="componant-section" id="icon">
+					<h2 class="demo-section-title">Icon</h2>
+			      	<div class="row">
+			      		<h3 class="demo-componant-title">設定系</h3>
+			      		<i class="fa fa-cog"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-cog">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">チェック完了、もしくはOKサイン</h3>
+						<i class="fa fa-check-circle"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-check-circle">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">メール、メッセージ</h3>
+						<i class="fa fa-envelope-o"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-envelope-o">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">ダウンロード</h3>
+						<i class="fa fa-download"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-download">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">注意！</h3>
+						<i class="fa fa-exclamation-triangle"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-exclamation-triangle">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">編集</h3>
+						<i class="fa fa-pencil-square-o"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-pencil-square-o">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">フォルダ</h3>
+						<i class="fa fa-folder-o"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-folder-o">&lt;/i>
+</pre>
+						<i class="fa fa-folder-open-o"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-folder-open-o">&lt;/i>
+</pre>						
+
+						<h3 class="demo-componant-title">インフォ</h3>
+						<i class="fa fa-info-circle"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-info-circle">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">限定、ロック</h3>
+						<i class="fa fa-lock"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-lock">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">追加</h3>
+						<i class="fa fa-plus-circle"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-plus-circle">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">ヘルプ</h3>
+						<i class="fa fa-question-circle"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-question-circle">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">削除</h3>
+						<i class="fa fa-times"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-times">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">検索</h3>
+						<i class="fa fa-search"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-search">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">ファイル（ファイル選択とか）</h3>
+						<i class="fa fa-file-text-o"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-file-text-o">&lt;/i>
+</pre>
+
+						<h3 class="demo-componant-title">別窓で開くリンク</h3>
+						<i class="fa fa-external-link"></i>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;i class="fa fa-external-link">&lt;/i>
+</pre>
+						<h2 class="demo-section-title">Menu Icon (制作ルーム内）</h2>
+						<h3 class="demo-componant-title">チャット</h3>
+						<p><a href="http://www.flaticon.com/free-icon/speech-bubbles-with-ellipsis_61533">http://www.flaticon.com/free-icon/speech-bubbles-with-ellipsis_61533</a></p>
+
+						<h3 class="demo-componant-title">スケジュール</h3>
+						<p><a href="http://www.flaticon.com/free-icon/small-calendar_4430">http://www.flaticon.com/free-icon/small-calendar_4430</a></p>
+
+						<h3 class="demo-componant-title">ナレーション</h3>
+						<p><a href="http://www.flaticon.com/free-icon/microphone-interface-symbol-for-voice_33493">http://www.flaticon.com/free-icon/microphone-interface-symbol-for-voice_33493</a></p>
+
+						<h3 class="demo-componant-title">プレビュー</h3>
+						<p><a href="http://www.flaticon.com/free-icon/movie-play-button_33692">http://www.flaticon.com/free-icon/movie-play-button_33692</a></p>
+
+						<h3 class="demo-componant-title">納品</h3>
+						<p><a href="http://www.flaticon.com/free-icon/gift-big-box_23642">http://www.flaticon.com/free-icon/gift-big-box_23642</a></p>
+			      	</div>
+			    </div>
+
+				<!-- #### CheckBoxes #### -->
+				<div class="componant-section" id="checkboxes">
+			      	<div class="row">
+						<div class="col-xs-12 col-md-6">
+							<h2 class="demo-section-title">Checkboxes and Radio Buttons</h2>
+							<div class="col-md-6 col-xs-12">
+								<h3 class="demo-componant-title">Checkboxes</h3>
+					          	<label class="checkbox checked" for="checkbox1">
+						            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" checked="" />
+						            Oy! Me box is filled!
+						        </label>
+
+					          	<label class="checkbox" for="checkbox1">
+						            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" />
+						            No one be fillin’ my box!
+						        </label>
+
+					          	<label class="checkbox disabled checked" for="checkbox1">
+						            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" disabled="" checked="" />
+						            Got picked, but I’m disabled.
+						        </label>
+
+					          	<label class="checkbox disabled" for="checkbox1">
+						            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox" disabled="" />
+						            Aaand I’m disabled.
+						        </label>
+							</div>
+					        <div class="col-md-6 col-xs-12">
+								<h3 class="demo-componant-title">Radio</h3>
+
+					          	<label class="radio">
+					            	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-toggle="radio">
+						            Radio is off
+						        </label>
+
+						        <label class="radio">
+						            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-toggle="radio" checked="">
+						            Radio is on
+						        </label>
+
+						        <label class="radio">
+						            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios3" value="option2" data-toggle="radio" disabled="">
+						            Disabled radio is off
+						        </label>
+
+						        <label class="radio">
+						            <input type="radio" name="optionsRadiosDisabled" id="optionsRadios4" value="option2" data-toggle="radio" checked="" disabled="">
+						            Disabled radio is on
+						        </label>
+						    </div>
+						</div>
+						<div class="col-xs-12 col-md-6">
+							<h2 class="demo-section-title">Switches</h2>
+						    <div class="col-xs-12">
+								<h3 class="demo-componant-title">Default</h3>
+				            	<input type="checkbox" checked data-toggle="switch" />
+	    						<input type="checkbox" data-toggle="switch" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- #### Color Palette #### -->
+				<div class="componant-section hidden-xs" id="colors">
+					<h2 class="demo-section-title">Color Palette</h2>
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+							<h3 class="demo-componant-title">Core Colors</h3>
+							<div class="pallete-items">
+								<div class="pallete-item">
+									<div class="color-main"></div>
+									<dl class="palette palette-primary palette-lagoon">
+										<dt>Viibar-wasabi</dt>
+										<dd>$color-wasabi (#81C320)</dd>
+									</dl>
+									<div class="color-main-shade"></div>
+									<dl class="palette palette-secondary palette-overboard">
+										<dt>Viibar-matcha</dt>
+										<dd>$color-matcha (#679B1B)</dd>
+									</dl>
+								</div>
+
+								<div class="pallete-item">
+									<div class="color-accent"></div>
+									<dl class="palette palette-primary palette-strawberry">
+										<dt>Pop-soda</dt>
+										<dd>$color-pop-soda (#45B3D8)</dd>
+									</dl>
+									<div class="color-accent-shade"></div>
+									<dl class="palette palette-secondary palette-first-blood">
+										<dt>Deep-sea</dt>
+										<dd>$color-deep-sea (#0F7697)</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<h3 class="demo-componant-title">Accent Colors</h3>
+							<div class="pallete-items">
+								<div class="pallete-item">
+									<div class="color-emergency"></div>
+									<dl class="palette palette-primary palette-bruise">
+										<dt>Emergency</dt>
+										<dd>$color-emergency (#cc0000)</dd>
+									</dl>
+									<div class="color-attention"></div>
+									<dl class="palette palette-secondary palette-sugar-plum">
+										<dt>Attention</dt>
+										<dd>$color-warning (#FF9B00)</dd>
+									</dl>
+								</div>
+
+								<div class="pallete-item">
+									<div class="color-delete"></div>
+									<dl class="palette palette-primary palette-emerald-cove">
+										<dt>Delete</dt>
+										<dd>$color-delete (#d9534f)</dd>
+									</dl>
+									<!--<dl class="palette palette-secondary palette-land-lubber">
+										<dt>Landlubber</dt>
+										<dd>#28948c</dd>
+									</dl>
+								</div>
+								<div class="pallete-item">
+									<dl class="palette palette-primary palette-horizon">
+										<dt>Hoirzon</dt>
+										<dd>#f58410</dd>
+									</dl>
+									<dl class="palette palette-secondary palette-nassua-sunset">
+										<dt>Nassua Sunset</dt>
+										<dd>#e96300</dd>
+									</dl>-->
+								</div>
+							</div>
+						</div>
+					</div> <!-- /row -->
+
+					<div class="row">
+						<div class="col-md-12 col-sm-8">
+							<h3 class="demo-componant-title">Shade Colors</h3>
+							<div class="pallete-item pallete-joined">
+								<div class="color-shade01"></div>
+								<dl class="palette palette-shade palette-the-black-flag">
+									<dt>Light-black</dt>
+									<dd>$color-light-black (#555555)</dd>
+								</dl>
+							</div>
+							<div class="pallete-item pallete-joined">
+								<div class="color-shade02"></div>
+								<dl class="palette palette-shade palette-gunpowder">
+									<dt>Konnyaku</dt>
+									<dd>$color-konnyaku (#757575)</dd>
+								</dl>
+							</div>
+							<div class="pallete-item pallete-joined">
+								<div class="color-shade03"></div>
+								<dl class="palette palette-shade palette-pieces-of-eight">
+									<dt>Smog</dt>
+									<dd>$color-smog (#bababa)</dd>
+								</dl>
+							</div>
+							<div class="pallete-item pallete-joined">
+								<div class="color-shade04"></div>
+								<dl class="palette palette-shade palette-cutlass">
+									<dt>Cloudy</dt>
+									<dd>$color-cloudy (#dbdbdb)</dd>
+								</dl>
+							</div>
+							<div class="pallete-item pallete-joined">
+								<div class="color-shade05"></div>
+								<dl class="palette palette-shade palette-coastal-surf">
+									<dt>Fog</dt>
+									<dd>$color-fog (#f5f5f5)</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- #### Input Fields #### -->
+				<div class="componant-section" id="inputs">
+					<h2 class="demo-section-title">Input Fields</h2>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group" style="margin-bottom: 10px;">
+							<h3 class="demo-componant-title">Normal</h3>
+					          <label>メールアドレス</label>
+					          <input class="form-control" id="creator_mail_address" name="creator[mail_address]" required="required" type="email">
+					          <span id="mail_address_err"></span>
+					        </div>
+<pre class="prettyprint linenums" style="margin-bottom: 40px;">
+&lt;label>メールアドレス&lt;/label>
+		&lt;input class="form-control" id="・・・" name="・・・" required="・・・" type="・・・">
+</pre>
+
+							<h3 class="demo-componant-title">Disabled</h3>
+								<div class="form-group">
+									<div>
+										<input class="form-control" id="creator_mail_address" name="creator[mail_address]" type="text" placeholder="Shiver me timbers!" disabled="" />
+									</div>
+								</div>
+<pre class="prettyprint linenums" style="margin-bottom: 40px;">
+&lt;label>メールアドレス&lt;/label>
+		&lt;input class="form-control" id="・・・" name="・・・" required="・・・" type="・・・"　placeholder="・・・"　disabled="" />
+</pre>
+
+						</div>
+
+						<div class="col-md-6">
+							<h3 class="demo-componant-title">TextField Interaction</h3>
+							<form class="form-horizontal" role="form">
+
+								<div class="form-group has-error">
+									<label class="col-sm-3 control-label">Error</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" value="$color-delete (#d9534f)" >
+									</div>
+								</div>
+
+								<div class="form-group has-success">
+									<label class="col-sm-3 control-label">Success</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" value="$color-wasabi (#81C320)" />
+									</div>
+								</div>
+							</form>
+							
+						</div>
+
+					</div> <!-- /row -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ### Typography -->
+	<div class="container-dark" id="type">
+		<div class="container">
+			<div class="col-md-10 typography-container">
+				<h3 class="demo-componant-title demo-componant-title-inverse">Typography</h3>
+				<p class="demo-type-heading">タイトルはfont-size:24pxです</p>
+				<p class="demo-type">
+					<span class="demo-type-regular">普通のテキストサイズは14px、カラーは#555555です。デフォで-webkit-font-smoothing: antialiased;もつけます。テキストリンクはこんな感じ<a href="http://viibar.com/" target="_blank">http://viibar.com/</a>カラーは#0F7697です。</span>
+				</p>
+				<p class="dot-line" style="margin: 100px 0 20px;">下にドットの罫線を入れることもできます。</p>
+<pre class="prettyprint linenums" style="margin-bottom: 40px;">
+&lt;p class="dot-line">タイトルとかにドットの罫線を入れることもできます。&lt;/p>
+</pre>
+				<header class="page-header clearfix" style="border-bottom: 0px; margin-top: 100px;">
+				  <div class="title-box pull-left">
+				    <h2 class="title" style="border-bottom: none;">スケジュール初期設定</h2>
+				    <p class="description">制作のスケジュール管理ができます</p>
+				  </div>
+				</header>
+<pre class="prettyprint linenums" style="margin: 20px 0 100px 0;">
+&lt;header class="page-header clearfix">
+	  &lt;div class="title-box pull-left">
+	    &lt;h2 class="title">スケジュール初期設定&lt;/h2>
+	    &lt;p class="description">制作のスケジュール管理ができます&lt;/p>
+	  &lt;/div>
+&lt;/header>
+</pre>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10">
+
+				<!-- #### Tag #### -->
+				<div class="componant-section" id="label">
+					<h2 class="demo-section-title">Label</h2>
+					<div class="row">
+						<div class="col-md-10">
+							<h3 class="demo-componant-title">Border</h3>
+							<div class="category">
+                                  <span class="label label-border">フラットアニメーション</span>
+                                  <span class="label label-border">商品・サービス利用訴求</span>
+                                  <span class="label label-border">オリジナルビデオ</span>
+                                  <span class="label label-border">音楽・映像</span>
+                            </div>
+<pre class="prettyprint linenums" style="margin: 20px 0 100px 0;">
+&lt;span class="label label-border">フラットアニメーション&lt;/span>
+</pre>
+
+							<h3 class="demo-componant-title">Default</h3>
+							<div class="category">
+								<span class="label label-default">フラットアニメーション</span>
+							</div>
+<pre class="prettyprint linenums" style="margin: 20px 0 100px 0;">
+&lt;span class="label label-default">フラットアニメーション&lt;/span>
+</pre>
+
+							<h3 class="demo-componant-title">Info</h3>
+							<div class="category">
+								<span class="label label-default label-info">フラットアニメーション</span>
+							</div>
+<pre class="prettyprint linenums" style="margin: 20px 0 100px 0;">
+&lt;span class="label label-default label-info">フラットアニメーション&lt;/span>
+</pre>
+
+							<h3 class="demo-componant-title">Emergency</h3>
+							<div class="category">
+								<span class="label label-default label-emergency">フラットアニメーション</span>
+							</div>
+<pre class="prettyprint linenums" style="margin: 20px 0 100px 0;">
+&lt;span class="label label-default label-emergency">フラットアニメーション&lt;/span>
+</pre>
+
+							<h3 class="demo-componant-title">Attention</h3>
+							<div class="category">
+								<span class="label label-default label-attention">フラットアニメーション</span>
+							</div>
+<pre class="prettyprint linenums" style="margin: 20px 0 100px 0;">
+&lt;span class="label label-default label-attention">フラットアニメーション&lt;/span>
+</pre>
+							
+						</div>
+					</div>
+				</div>
+
+				<!-- #### Tab #### -->
+				<div class="componant-section" id="tab">
+					<h2 class="demo-section-title">Tab</h2>
+					<div class="row">
+					<ul class="tab-nav" role="tablist">
+				        <li role="presentation" class="active"><a href="#portfolio-list" aria-controls="portfolio-list" role="tab" data-toggle="tab">作品集</a></li>
+				        <li role="presentation"><a href="#self-promotion" aria-controls="self-promotion" role="tab" data-toggle="tab">経歴</a></li>
+				        <li role="presentation" class="visible-xs-inline-block"><a href="#basic-data" aria-controls="basic-data" role="tab" data-toggle="tab">基本データ</a></li>
+		            </ul>
+
+<pre class="prettyprint linenums" style="margin-bottom: 40px;">
+&lt;ul class="tab-nav" role="tablist">
+	&lt;li role="presentation" class="active">&lt;a href="#portfolio-list" aria-controls="portfolio-list" role="tab" data-toggle="tab">作品集&lt;/a>&lt;/li>
+	&lt;li role="presentation">&lt;a href="#self-promotion" aria-controls="self-promotion" role="tab" data-toggle="tab">経歴&lt;/a>&lt;/li>
+	&lt;li role="presentation" class="visible-xs-inline-block">&lt;a href="#basic-data" aria-controls="basic-data" role="tab" data-toggle="tab">基本データ&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>
+					</div>
+				</div>
+
+
+				<!-- #### Thumbnails #### -->
+				<!--<div class="componant-section" id="thumbnails">
+					<h2 class="demo-section-title">Thumbnails</h2>
+					<h3 class="demo-componant-title">Default</h3>
+					<div class="row">
+						<div class="col-xs-6 col-md-3">
+							<a href="#fakeLink" class="thumbnail fa-eye fa">
+								<img src="images/thumbnail-01.jpg" alt="100%x180" >
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="#fakeLink" class="thumbnail fa-eye fa">
+								<img src="images/thumbnail-02.jpg" alt="100%x180">
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="#fakeLink" class="thumbnail fa-eye fa">
+								<img src="images/thumbnail-03.jpg" alt="100%x180">
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-3">
+							<a href="#fakeLink" class="thumbnail fa-eye fa">
+								<img src="images/thumbnail-04.jpg" alt="100%x180">
+							</a>
+						</div>
+					</div>
+
+					<h3 class="demo-componant-title">Custom Content</h3>
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="thumbnail thumbnail-caption">
+						      	<img src="images/thumbnail-large-01.jpg" alt="100%x180">
+						      	<div class="caption">
+							        <h4>15 men on a dead chest</h4>
+							        <p>Fifteen men on the dead man’s chest – Yo-ho-ho and a bottle of rum! Drink and the devil had done for the rest – Yo-ho-ho and a bottle of rum!</p>
+							        <p>
+							        	<a href="#fakeLink" class="btn btn-primary" style="width: 100px;">Arr!</a>
+							        	<a href="#fakeLink" class="btn btn-default btn-stroke" style="width: 100px; margin-left: 10px;">Avast</a>
+							        </p>
+						      	</div>
+						    </div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="thumbnail thumbnail-caption">
+						      	<img src="images/thumbnail-large-02.jpg" alt="100%x180">
+						      	<div class="caption">
+							        <h4>The mate was fixed</h4>
+							        <p>by the bos’n's pike, the bos’n brained with a marlinspike and Cookey’s throat was marked belike. It had been gripped by fingers ten.</p>
+							        <p>
+							        	<a href="#fakeLink" class="btn btn-primary" style="width: 100px;">Arr!</a>
+							        	<a href="#fakeLink" class="btn btn-default btn-stroke" style="width: 100px; margin-left: 10px;">Avast</a>
+							        </p>
+						      	</div>
+						    </div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="thumbnail thumbnail-caption">
+						      	<img src="images/thumbnail-large-03.jpg" alt="100%x180">
+						      	<div class="caption">
+	   						        <h4>And there they lay</h4>
+							        <p>All good dead men, like break-o’-day in a boozing-ken – Yo-ho-ho and a bottle of rum! Fifteen men of a whole ship’s list – Yo-ho-ho and a bottle of rum!</p>
+							        <p>
+							        	<a href="#fakeLink" class="btn btn-primary" style="width: 100px;">Arr!</a>
+							        	<a href="#fakeLink" class="btn btn-default btn-stroke" style="width: 100px; margin-left: 10px;">Avast</a>
+							        </p>
+						      	</div>
+						    </div>
+						</div>
+					</div>
+				</div>-->
+
+				<!-- #### Alerts #### -->
+				<div class="componant-section" id="alerts">
+					<h2 class="demo-section-title">Alerts</h2>
+					<!--<div class="alert alert-primary alert-dismissable">
+						<button type="button" class="close fa-times fa"></button>
+						Primary! There's never a man <strong>looked me between the eyes</strong> and seen a good day a'terward.
+					</div>-->
+					<div class="alert alert-info">
+						Info! Damnation seize my soul <strong>if I give you quarters,</strong> or take any from you.
+					</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="alert alert-info" role="alert">...&lt;/div>
+</pre>
+
+					<div class="alert alert-success">
+						Success! Damn my blood... I scorn to do anyone a mischief, <strong>when it is not for my advantage.</strong>
+					</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="alert alert-success" role="alert">...&lt;/div>
+</pre>
+
+					<div class="alert alert-warning">
+						Warning! Surrender now! <strong>This be yer last warnin’</strong> else we won’t give no quarter.
+					</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="alert alert-warning" role="alert">...&lt;/div>
+</pre>
+
+					<div class="alert alert-danger">
+						Error! I am sorry to see you here, <strong>but if you had fought like a man,</strong> you needn't be hanged like a dog.
+					</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="alert alert-danger" role="alert">...&lt;/div>
+</pre>
+
+				</div>
+
+				<!-- #### Panels #### -->
+				<div class="componant-section" id="panels">
+					<h2 class="demo-section-title">Panels</h2>
+
+					<div class="row">
+						<div class="col-md-10">
+							<h3 class="demo-componant-title">Basic</h3>
+							<div class="panel panel-default" style="width: 50%;">
+								<div class="panel-body">
+									Basic panel
+								</div>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-default">
+  &lt;div class="panel-body">
+    Basic panel example
+  &lt;/div>
+&lt;/div>
+</pre>
+
+							<div class="panel panel-default" style="width: 50%;">
+								<div class="panel-heading">Panel heading without title</div>
+								<div class="panel-body">
+									Panel content
+								</div>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-default">
+  &lt;div class="panel-heading">Panel heading without title&lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+</pre>
+
+
+							<div class="panel panel-default" style="width: 50%;">
+								<div class="panel-heading">
+									<h3 class="panel-title">Panel title</h3>
+								</div>
+								<div class="panel-body">
+									Panel content
+								</div>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-default">
+  &lt;div class="panel-heading">
+    &lt;h3 class="panel-title">Panel title</h3>
+  &lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+</pre>
+
+						</div>
+						<div class="col-md-10">
+							<h3 class="demo-componant-title">Contextual alternatives</h3>
+							<div class="panel panel-primary" style="width: 50%;">
+								<div class="panel-heading">
+									<h3 class="panel-title">Panel with heading title</h3>
+								</div>
+								<div class="panel-body">
+									This be yer content in here!
+								</div>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-primary">
+  &lt;div class="panel-heading">
+    &lt;h3 class="panel-title">Panel title</h3>
+  &lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+</pre>
+
+							<div class="panel panel-info" style="width: 50%;">
+								<div class="panel-heading">
+									<h3 class="panel-title">Panel with heading title</h3>
+								</div>
+								<div class="panel-body">
+									This be yer content in here!
+								</div>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-info">
+  &lt;div class="panel-heading">
+    &lt;h3 class="panel-title">Panel title</h3>
+  &lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+</pre>
+
+							<div class="panel panel-success" style="width: 50%;">
+								<div class="panel-heading">
+									<h3 class="panel-title">Panel with heading title</h3>
+								</div>
+								<div class="panel-body">
+									This be yer content in here!
+								</div>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-success">
+  &lt;div class="panel-heading">
+    &lt;h3 class="panel-title">Panel title</h3>
+  &lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+</pre>
+
+							<div class="panel panel-warning" style="width: 50%;">
+								<div class="panel-heading">
+									<h3 class="panel-title">Panel with heading title</h3>
+								</div>
+								<div class="panel-body">
+									This be yer content in here!
+								</div>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-warning">
+  &lt;div class="panel-heading">
+    &lt;h3 class="panel-title">Panel title</h3>
+  &lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+</pre>
+
+							<div class="panel panel-danger" style="width: 50%;">
+								<div class="panel-heading">
+									<h3 class="panel-title">Panel with heading title</h3>
+								</div>
+								<div class="panel-body">
+									This be yer content in here!
+								</div>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-danger">
+  &lt;div class="panel-heading">
+    &lt;h3 class="panel-title">Panel title</h3>
+  &lt;/div>
+  &lt;div class="panel-body">
+    Panel content
+  &lt;/div>
+&lt;/div>
+</pre>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<h3 class="demo-componant-title">Panel with body and Table</h3>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<div class="panel-heading">Shiver me timbers!</div>
+								<div class="panel-body">
+									<p>My name is Captain Kidd, as I sailed, as I sailed. Oh my name is Captain Kidd as I sailed. My name is Captain Kidd and God's laws I did forbid, and most wickedly I did as I sailed.</p>
+								</div>
+
+								<!-- Table -->
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Ship Name</th>
+											<th>Captain</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Walrus</td>
+											<td>James Flint</td>
+											<td>Unknown</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Royal Fortune</td>
+											<td>Black Bart</td>
+											<td>Destroyed</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Ranger</td>
+											<td>Charles Vane</td>
+											<td>Captured</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-default">
+  <!-- Default panel contents -->
+  &lt;div class="panel-heading">Panel heading&lt;/div>
+  &lt;div class="panel-body">
+    &lt;p>...&lt;/p>
+  &lt;/div>
+
+  <!-- Table -->
+  &lt;table class="table">
+    ...
+  &lt;/table>
+&lt;/div>
+</pre>
+
+							<h3 class="demo-componant-title">Panel with Table</h3>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<div class="panel-heading">Panel heading</div>
+
+								<!-- Table -->
+								<table class="table">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Ship Name</th>
+											<th>Captain</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Walrus</td>
+											<td>James Flint</td>
+											<td>Unknown</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Royal Fortune</td>
+											<td>Black Bart</td>
+											<td>Destroyed</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Ranger</td>
+											<td>Charles Vane</td>
+											<td>Captured</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="panel panel-default">
+  <!-- Default panel contents -->
+  &lt;div class="panel-heading">Panel heading&lt;/div>
+
+  <!-- Table -->
+  &lt;table class="table">
+    ...
+  &lt;/table>
+&lt;/div>
+</pre>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- #### Toolchip #### -->
+				<div class="componant-section" id="toolchip">
+					<h2 class="demo-section-title">Toolchip</h2>
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="demo-componant-title">Small</h3>
+							<div class="bs-example tooltip-demo">
+							    <p>
+							    	Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="" data-original-title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+							    </p>
+  							</div>
+
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip">you probably&lt;/a>
+</pre>
+ 	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left" style="margin-right: 10px;">Tooltip on left</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top" style="margin-right: 10px;">Tooltip on top</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" style="margin-right: 10px;">Tooltip on bottom</button>
+
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right" style="margin-right: 10px;">Tooltip on right</button>
+
+<pre class="prettyprint linenums" style="margin: 50px 0 80px 0;"> 
+	&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left&lt;/button>
+
+	&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"">Tooltip on top&lt;/button>
+
+	&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom&lt;/button>
+
+	&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right&lt;/button>
+</pre>
+						</div>
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</pre>
+
+						<h3 class="demo-componant-title">Large</h3>
+						<div style="height: 300px;">
+						<div class="popover top in" role="tooltip" id="popover452191" style="display: block;"><div class="arrow"></div><h3 class="popover-title">記述例</h3><div class="popover-content">【仕事内容】<br>
+1分尺の実写WEB CM映像のカメラ撮影(ムービー)をお願いします。<br>
+拘束期間は仮で、クライアント都合で変更になる場合もあります。<br>
+<br>
+【採用基準】<br>
+・関東在住のプロ歴10年以上のフリーカメラマン(30代~40代/性別不問)<br>
+・一眼レフ動画での撮影現場経験豊富な方<br>
+・撮影当日、撮影機材をご持参頂ける方(例.5D mark Ⅱと各種レンズ等)】</div></div></div>
+<pre class="prettyprint linenums" style="margin-bottom: 50px;"> 
+	&lt;div class="popover top in" role="tooltip" id="popover452191">&lt;div class="arrow">&lt;/div>&lt;h3 class="popover-title">記述例&lt;/h3>&lt;div class="popover-content">・・・&lt;/div>&lt;/div>
+</pre>
+					</div>
+				</div>
+
+
+				<!-- #### Modal #### -->
+				<div class="componant-section" id="toolbars">
+					<h2 class="demo-section-title">Modal</h2>
+					<h3 class="demo-componant-title">Normal</h2>
+					<div class="modal fade modal-new in" id="tutorialModal" aria-hidden="false" style="display: block;">
+  <div class="modal-dialog">
+    <div class="modal-content modal-schedule">
+      <div class="modal-header" style="background-color: #f5f5f5;">
+        <h1 class="modal-title" style="display: block;">TitleTitleTitle</h1>
+      </div>
+      <div class="modal-body">
+        <section class="modal-body-content" style="display: block; padding: 0;">
+          <div class="tutorial-row clearfix">
+            <div class="pull-left description">
+              <p>早速始めましょう！</p>
+                <p style="margin-top: 15px">な工程を選択／作成したのち、各工程に掛かる時間を指定します。
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer text-right">
+        <div class="modal-footer-left">
+        </div>
+
+        <div class="modal-footer-right" style="top: 5px">
+          <button type="button" class="btn btn-peta js-btn-prev" style="width: 120px; display: inline-block;">キャンセル</button>
+          <button type="button" class="btn btn-main js-btn-end" style="width: 120px; display: inline-block;">使ってみる</button>
+        </div>
+
+        <div class="modal-footer-center">
+          <ul class="modal-pagination">
+            <li class="" style="background-color: #ffffff;"></li>
+            <li class="" style="background-color: #ffffff;"></li>
+            <li class="is-active" style="background-color: #ffffff;"></li>
+          </ul>
+        </div>
+      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div>
+
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="modal fade modal-new in" id="tutorialModal" aria-hidden="false>
+	&lt;div class="modal-dialog">
+	    &lt;div class="modal-content modal-schedule">
+	      &lt;div class="modal-header">
+	        &lt;h1 class="modal-title">TitleTitleTitle</h1>
+	      &lt;/div>
+	      &lt;div class="modal-body">
+	        &lt;section class="modal-body-content">
+	          &lt;div class="tutorial-row clearfix">
+	            &lt;div class="pull-left description">
+	              ・・・
+	            &lt;/div>
+	          &lt;/div>
+	        &lt;/section>
+	      &lt;/div>
+
+	      &lt;div class="modal-footer text-right">
+	        &lt;div class="modal-footer-left">
+	        &lt;/div>
+	        &lt;div class="modal-footer-right" style="top: 5px">
+	          &lt;button type="button" class="btn btn-peta js-btn-prev" style="width: 120px; display: inline-block;">キャンセル&lt;/button>
+	          &lt;button type="button" class="btn btn-main js-btn-end" style="width: 120px; display: inline-block;">使ってみる&lt;/button>
+	       	&lt;/div>
+	      &lt;/div>
+		&lt;/div><!-- /.modal-content -->
+	&lt;/div><!-- /.modal-dialog -->
+&lt;/div>
+</pre>
+
+					<h3 class="demo-componant-title">Large</h2>
+					<div class="modal fade modal-new in" id="tutorialModal" aria-hidden="false" style="display: block;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content modal-schedule">
+      <div class="modal-header" style="background-color: #f5f5f5;">
+        <h1 class="modal-title" style="display: block;">TitleTitleTitle</h1>
+      </div>
+      <div class="modal-body">
+        <section class="modal-body-content" style="display: block;">
+          <div class="tutorial-row clearfix">
+            <div class="pull-left description">
+              <p>
+                早速始めましょう！<br>
+                この画面では、スケジュールの初期設定を行います。必要な工程を選択／作成したのち、各工程に掛かる時間を指定します。この画面では、スケジュールの初期設定を行います。必要な工程を選択／作成したのち、各工程に掛かる時間を指定します。この画面では、スケジュールの初期設定を行います。</p>
+                <p style="margin-top: 20px">必要な工程を選択／作成したのち、各工程に掛かる時間を指定します。
+              </p>
+              <ul style="margin-top: 40px;">         
+                <li>初期設定画面では工程とその開始と終了の日時を決めます</li>
+                <li>不要な工程を削除／不足している工程を追加することができます</li>
+                <li>２ページ目では工程の範囲日時を決めます</li>
+                <li>各工程の終了日時が、納品予定日を超えないように注意しましょう</li>
+                <li>ここで設定する内容は後で変更が可能です。</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer text-right">
+        <div class="modal-footer-left">
+        </div>
+
+        <div class="modal-footer-right" style="top: 5px">
+          <button type="button" class="btn btn-peta js-btn-prev" style="width: 120px; display: inline-block;">キャンセル</button>
+          <button type="button" class="btn btn-main js-btn-end" style="width: 120px; display: inline-block;">使ってみる</button>
+        </div>
+
+        <div class="modal-footer-center">
+          <ul class="modal-pagination">
+            <li class="" style="background-color: #ffffff;"></li>
+            <li class="" style="background-color: #ffffff;"></li>
+            <li class="is-active" style="background-color: #ffffff;"></li>
+          </ul>
+        </div>
+      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div>
+
+<pre class="prettyprint linenums" style="margin-bottom: 80px;">
+&lt;div class="modal fade modal-new in" id="tutorialModal" aria-hidden="false>
+	&lt;div class="modal-dialog modal-lg">
+	    &lt;div class="modal-content modal-schedule">
+	      &lt;div class="modal-header">
+	        &lt;h1 class="modal-title">TitleTitleTitle</h1>
+	      &lt;/div>
+	      &lt;div class="modal-body">
+	        &lt;section class="modal-body-content">
+	          &lt;div class="tutorial-row clearfix">
+	            &lt;div class="pull-left description">
+	            	・・・
+	            &lt;/div>
+	          &lt;/div>
+	        &lt;/section>
+	      &lt;/div>
+
+	      &lt;div class="modal-footer text-right">
+	        &lt;div class="modal-footer-left">
+	        &lt;/div>
+	        &lt;div class="modal-footer-right" style="top: 5px">
+	          &lt;button type="button" class="btn btn-peta js-btn-prev" style="width: 120px; display: inline-block;">キャンセル&lt;/button>
+	          &lt;button type="button" class="btn btn-main js-btn-end" style="width: 120px; display: inline-block;">使ってみる&lt;/button>
+	       	&lt;/div>
+	      &lt;/div>
+		&lt;/div><!-- /.modal-content -->
+	&lt;/div><!-- /.modal-dialog -->
+&lt;/div>
+</pre>	
+	
+
+					
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div id="user-toolbar-options" style="display: none">
+						<a href="#fakeLink"><i class="fa fa-user"></i></a>
+						<a href="#fakeLink"><i class="fa fa-star"></i></a>
+						<a href="#fakeLink"><i class="fa fa-flag"></i></a>
+						<a href="#fakeLink"><i class="fa fa-edit"></i></a>
+						<a href="#fakeLink"><i class="fa fa-trash-o"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="sidenav" class="sidebar affix hidden-xs hidden-sm">
+		            <ul class="nav" data-spy="affix">
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#icon">Icon</a></li>						
+						<li><a href="#checkboxes">Checkboxes and Switches</a></li>
+						<li><a href="#colors">Color Palette</a></li>
+						<li><a href="#inputs">Input Fields</a></li>
+						<li><a href="#type">Typography</a></li>
+						<li><a href="#label">Label</a></li>
+						<li><a href="#tab">Tab</a></li>				
+						<li><a href="#alerts">Alerts</a></li>
+						<li><a href="#panels">Panels</a></li>
+						<li><a href="#toolchip">Toolchip</a></li>
+						<li><a href="#toolbars">Modal</a></li>
+		            </ul>
+		      	</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/checkbox.js"></script>
+	<script src="js/radio.js"></script>
+	<script src="js/bootstrap-switch.js"></script>
+	<script src="js/toolbar.js"></script>
+	<script src="js/application.js"></script>
+	<script src="js/prettify.js"></script>
+	<script type="text/javascript">
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+	</script>
+
+	</body>
+</html>
